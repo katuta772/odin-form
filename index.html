@@ -8,59 +8,66 @@
   </head>
   <body>
     <div class="container">
-
-
       <div class="background-section">
-        <img class="background-image"
+        <img
+          class="background-image"
           src="media/halie-west-25xggax4bSA-unsplash.jpg"
           alt="nature background"
         />
         <div class="logo-container">
-          <img class='logo-image' src="media/odin-lined.png" alt="odin logo" />
+          <img class="logo-image" src="media/odin-lined.png" alt="odin logo" />
           <h1 class="logo-title">ODIN</h1>
         </div>
         <p>Photo by <i>Halie West</i></p>
       </div>
 
-
-
       <div class="form-section">
         <h2>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up
-          <i>now</i> to get started.
+          this in your life to help you realize your deepest dreams. <br />Sign
+          up <i>now</i> to get started.
         </h2>
         <h2>You <i>know</i> you want to.</h2>
         <div class="form">
           <h2>Let's do this!</h2>
           <fieldset class="name">
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" name="first_name" id="first_name" />
-            <label for="last_name">LAST NAME</label>
-            <input type="text" name="last_name" id="last_name" />
+            <div class="name-first">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" name="first_name" id="first_name" />
+            </div>
+            <div class="name-last">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" name="last_name" id="last_name" />
+            </div>
           </fieldset>
           <fieldset class="contact">
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
-            <label for="phone">PHONE NUMBER</label>
-            <input type="number" name="phone" id="phone" />
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="phone">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
           </fieldset>
           <fieldset class="password">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" />
-            <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              name="confirm_password"
-              id="confirm_password"
-            />
+            <div class="password-password">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="password-confirm">
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+              />
+            </div>
           </fieldset>
         </div>
         <button class="create">Create Account</button>
-        <h2>Already have an account?<a href="">Log in</a></h2>
+        <h2>Already have an account?<a href="" class="login"> Log in</a></h2>
       </div>
-
-
     </div>
   </body>
 </html>

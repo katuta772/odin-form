@@ -1,70 +1,199 @@
 @font-face {
-    font-family: 'Norse';
-    src: url('media/Norse-Bold.otf');
+  font-family: "Norse";
+  src: url("media/Norse-Bold.otf");
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-    height: 930px;
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 930px;
+  background-color:rgba(0, 0, 0, 0.041);
 }
 
 /* 
 LOGO SECTION
 */
-.background-section{
-    width: 30%;
-    height: 100%;
-    position: relative;
+.background-section {
+  width: 40%;
+  height: 100%;
+  position: relative;
 }
 
-.background-image{
-    width: 100%;
-    height: 100%;
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.logo-container{
-    width: 100%;
-    position: absolute;
-    top: 30%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0 10px 0;
+.logo-container {
+  width: 100%;
+  position: absolute;
+  top: 23%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 10px 0;
 }
 
-.logo-image{
-    max-width: 90px;
+.logo-image {
+  max-width: 90px;
 }
 
-.logo-title{
-    font-size: 80px;
-    font-family: 'Norse';
-    margin: 0;
+.logo-title {
+  font-size: 80px;
+  font-family: "Norse";
+  margin: 0;
 }
 
 .background-section > p {
-    position: absolute;
-    top: 95%;
-    left: 35%;
-    color: white;
-    opacity: 60%;
+  position: absolute;
+  top: 95%;
+  left: 35%;
+  color: white;
+  opacity: 60%;
 }
 
 /* 
 FORM SECTION
 */
 
-.form-section{
+.form-section {
+  margin: 100px 0 100px 0;
+}
 
+.form-section > h2 {
+  width: 50%;
+  font-family: monospace;
+  font-weight: bolder;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.login{
+    color: #596D48;
+    text-decoration: none;
+}
+
+.login:visited{
+    color: #596D48;
+    text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 30px 30px 30px 50px;
+  margin: 40px 0 20px 0;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 5px slategray;
+}
+
+.form > h2 {
+  font-family: monospace;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.form > fieldset {
+  border: 0;
+}
+
+label{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-left: 5px;
+    color: rgb(57, 68, 78);
+    width: 220px;
+}
+
+input{
+    padding: 5px;
+    border: solid 1px gray;
+    outline: none;
+    border-radius: 5px;
+}
+
+input:focus{
+    border: solid 1px blue;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.form > .name{
+    display: flex;
+    gap: 50px;
+    padding: 0;
+}
+
+.form > .name > .name-first{
+    display: flex;
+    flex-direction: column;
+}
+
+.form > .name > .name-last{
+    display: flex;
+    flex-direction: column;
+}
+
+.form > .contact{
+    display: flex;
+    gap: 50px;
+    padding: 0;
+}
+
+.form > .contact > .email{
+    display: flex;
+    flex-direction: column;
+}
+
+.form > .contact > .phone{
+    display: flex;
+    flex-direction: column;
+}
+
+.form > .password{
+    display: flex;
+    gap: 50px;
+    padding: 0;
+}
+
+.form > .password > .password-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.form > .password > .password-confirm{
+    display: flex;
+    flex-direction: column;
+}
+
+.create{
+    margin: 20px 0 20px 50px;
+    background-color: #596D48;
+    padding: 10px 40px 10px 40px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.create:hover{
+    background-color: #596d48da;
 }
