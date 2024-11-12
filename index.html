@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="container">
@@ -33,27 +34,27 @@
           <fieldset class="name">
             <div class="name-first">
               <label for="first_name">FIRST NAME</label>
-              <input type="text" name="first_name" id="first_name" />
+              <input type="text" name="first_name" id="first_name" required/>
             </div>
             <div class="name-last">
               <label for="last_name">LAST NAME</label>
-              <input type="text" name="last_name" id="last_name" />
+              <input type="text" name="last_name" id="last_name" required/>
             </div>
           </fieldset>
           <fieldset class="contact">
             <div class="email">
               <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required/>
             </div>
             <div class="phone">
               <label for="phone">PHONE NUMBER</label>
-              <input type="text" name="phone" id="phone" />
+              <input type="text" name="phone" id="phone" required/>
             </div>
           </fieldset>
           <fieldset class="password">
             <div class="password-password">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required/>
             </div>
             <div class="password-confirm">
               <label for="confirm_password">CONFIRM PASSWORD</label>
@@ -61,11 +62,12 @@
                 type="password"
                 name="confirm_password"
                 id="confirm_password"
+                required
               />
             </div>
           </fieldset>
         </div>
-        <button class="create">Create Account</button>
+        <button class="create" onclick="submitForm()">Create Account</button>
         <h2>Already have an account?<a href="" class="login"> Log in</a></h2>
       </div>
     </div>
