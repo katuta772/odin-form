@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="background-section">
-            <img src="media/halie-west-25xggax4bSA-unsplash.jpg" alt="nature background">
-            <div class="logo-container">
-                <img src="media/odin-lined.png" alt="odin logo">
-                <h1 class="logo-title">ODIN</h1>
-            </div>
+      <div class="background-section">
+        <img
+          src="media/halie-west-25xggax4bSA-unsplash.jpg"
+          alt="nature background"
+        />
+        <div class="logo-container">
+          <img src="media/odin-lined.png" alt="odin logo" />
+          <h1 class="logo-title">ODIN</h1>
         </div>
-        <div class="form-section">
-
+      </div>
+      <div class="form-section">
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <i>now</i> to get started.
+        </h2>
+        <h2>You <i>know</i> you want to.</h2>
+        <div class="form">
+          <h2>Let's do this!</h2>
+          <fieldset class="name">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" id="first_name" />
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" id="last_name" />
+          </fieldset>
+          <fieldset class="contact">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" />
+            <label for="phone">PHONE NUMBER</label>
+            <input type="number" name="phone" id="phone" />
+          </fieldset>
+          <fieldset class="password">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" />
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+            />
+          </fieldset>
         </div>
+        <button class="create">Create Account</button>
+        <h2>Already have an account?<a href="">Log in</a></h2>
+      </div>
     </div>
-</body>
+  </body>
 </html>
